@@ -178,8 +178,11 @@ footer {
     flex-direction: row;
     justify-content: space-around;
 }
+.footertxt a{
+    color: #a9a9a9;
+
+}
 .footertxt{
-    color: #797979;
     padding-top: 13vw;
 }
 .emailfooter{
@@ -192,4 +195,17 @@ footer {
 .buttonfooter{
     padding: 35px;
     margin-bottom: 3vw;
+}
+.tableall{
+    align-items: center;
+    display:flex ;
+    flex-direction: column;
+    margin: 15px;
+}
+.emailinput ::placeholder{
+    color: black;
+}
+.txttable{
+    font-size: 40px
+    
 }
