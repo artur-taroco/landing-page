@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Eras;
+    src: url(./font/erasfont.ttf)
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F6F6F6;
+}
+.nav{
+    position: relative;
+    display: inline;
+    margin-top: 1.823vw;
+
+}
+.imagemlogo{
+    margin-top: 0.26vw;
+    margin-left: 0.26vw;
+    height: 205px;
+}
+.top{
+    position: relative;
+    display: flex;
+    inset: 0px;
+    position: relative;
+    height: 5.729vw;
+    background:  #F6F6F6;
+
+
+}
+#botaojogar{
+    margin-left: 500px;
+    position: fixed;
+}
+.texttop {
+    display: flex;
+}
+.nav a{
+    text-decoration: none;
+    color: #095068;
+    font-size: 1.563vw;
+    font-weight: bold;
+    margin-right: 1.042vw;
+    font-family: Eras;
+    justify-content: space-between;
+    transition-duration: 400ms;
+
+}
+.topbutton:hover{
+    transition: 400ms;
+    box-sizing: content-box;
+    transition-duration: 400ms;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 2vw;
+    border-radius: 1.042vw;
+    text-shadow: rgb(155, 155, 155)  3px 3px 6px;
+    flex-basis: 1;
+}
+.topbutton{
+    text-align: center;
+    translate: 0 60px;
+    margin-left: 2.083vw;
+}
+#gif1{
+    inset: 0px;
+
+    right: 0; 
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+.playnowbox{
+    background-color: #F6F6F6;
+    margin-top: -20.833vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    font-family: Eras;
+    width: 1000px;
+    text-align: center;
+    margin-left: 24vw;
+    height: 100px;
+    font-size: 22px;
+    color: #0D5268;
+}
+#logoprinc{
+    position: relative;
+    translate: 36.458vw -39.063vw;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    translate: 0 -6.406vw;
+    background-color: #F6F6F6;
+    padding-top: 5.208vw;
+}
+.megamennews{
+    color: #0d5268;
+    font-weight: 900;
+    font-size: 22px;
+}
+.patchnews{
+    color: #0d5268;
+    font-weight: 900;
+    font-size: 22px;
+}
+.salenews{
+    color: #0d5268;
+    font-weight: 900;
+    font-size: 22px;
+
+}
