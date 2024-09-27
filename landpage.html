@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+
     <audio id="musica" autoplay>
         <source src="./audio/welcomeaudio.ogg" type="audio/ogg">
         <source src="./audio/welcomeaudio.mp3" type="audio/mpeg">
@@ -22,8 +22,8 @@
             <a href="" class="topbutton">Battle Pass</a>
             <a href="" class="topbutton">E-sports</a>
             <a href="" class="topbutton">New Features</a>
-            <a href="" id="botaojogar">Play Now</a>
         </div>
+        <a href="" id="botaojogar"><img src="./imagens/playnowbutton.png" alt="" height="110"></a>
     </div>
     <video autoplay muted loop id="gif1">
         <source src="./imagens/backvideo.mp4" alt="" type="video/mp4">
@@ -68,23 +68,52 @@
             <p>Crossover Last Chance Sale FAQ</p>
         </div>
     </div>
-    <div>
-        <div class="">
+    <div class="sobre">
+        <div class="txtsobre">
+            <h2>Welcome to <br> Brawlhalla</h2>
+            <p>Brawlhalla is a free 2D platform fighting game that <br>
+                supports up to 8 local or online players with full cross-play <br>
+                for PC, PS5, PS4, Xbox Series X|S, Xbox One, Nintendo <br>
+                Switch, iOS and Android! History's greatest warriors brawl <br>
+                to prove who's the best in an epic test of strength and skill.</p>
+            <video controls muted width="600">
+                <source src="./imagens/BrawlhallaTrailer.mp4" type="video/mp4">
 
+            </video>
+        </div>
+        <div class="imgsobre">
+            <img src="./imagens/mordexfoda2.png" alt="" height="600">
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+        <div class="footer">
+            <div class="footerlogo">
+                <div class="brawllogo">
+                    <img src="./imagens/logofooter.png" alt="">
+                </div>
+                <div class="ologos">
+                    <img src="./imagens/ubsoftlogo.png" alt="" height="100">
+                    <img src="./imagens/bluelogo.png" alt="" height="100">
+                </div>
+            </div>
+            <div class="footertxt">
+                <p>Privacy Policy</p>
+                <p>End User License Agreement</p>
+                <p>Do Not Sell My Personal Information</p>
+                <p>Cookie Settings</p>
+            </div>
+            <div class="emailfooter">
+                <p style="color: #797979">Sign up to receive emails <br> with game updates</p>
+                <div class="emailinput">
+                    <form action="">
+                        <input type="email" class="email" placeholder="Enter your email">
+                        <button type="submit" class="buttonfooter">Submit</button>
+                    </form>
+                    <p style="font-size: 20px;">© 2024 Blue Mammoth Games. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script>
     var x = document.getElementById("musica");
