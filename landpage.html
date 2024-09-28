@@ -87,7 +87,7 @@
     </div>
     <div class="tableall">
         <div class="txttable">
-            <h1 style="color: #064370;">Variety of Weapons <br> and Legends</h1>
+            <h1 id="Weapons" style="color: #064370;">Variety of Weapons <br> and Legends</h1>
         </div>
         <div class="table">
             <table>
@@ -128,19 +128,32 @@
                 </div>
             </div>
             <div class="footertxt">
-                <a href="https://legal.ubi.com/privacypolicy/"><p>Privacy Policy</p></a>
-                <a href="https://legal.ubi.com/eula/en-US"><p>End User License Agreement</p></a>
-                <a href="https://www.ubisoft.com/en-us/help/contact?game=50003&platform=29&category=389&hidefields=all&gf=1&af=1"><p>Do Not Sell My Personal Information</p></a>
-                <a href="https://www.brawlhalla.com/"><p>Cookie Settings</p></a>
+
+                <ul>
+                    <li><a href="https://legal.ubi.com/privacypolicy/">
+                        <p>Privacy Policy</p>
+                    </a></li>
+                    <li><a href="https://legal.ubi.com/eula/en-US">
+                        <p>End User License Agreement</p>
+                    </a></li>
+                    <li><a
+                        href="https://www.ubisoft.com/en-us/help/contact?game=50003&platform=29&category=389&hidefields=all&gf=1&af=1">
+                        <p>Do Not Sell My Personal Information</p>
+                    </a></li>
+                    <li><a href="https://www.brawlhalla.com/">
+                        <p>Cookie Settings</p>
+                    </a></li>
+                </ul>
             </div>
             <div class="emailfooter">
-                <p style="color: #a9a9a9">Sign up to receive emails <br> with game updates</p>
-                <div class="emailinput">
-                    <form action="">
-                        <input type="email" class="email" placeholder="Enter your email">
-                        <button type="submit" class="buttonfooter">Submit</button>
+                <div id="formEmail">
+                    <form action="enviar">
+                        <label for="email" style="color: grey;">Sign up to receive emails <br> with game updates</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <button type="submit" name="emailForm" id="emailForm">Submit</button>
                     </form>
-                    <p style="font-size: 20px;">© 2024 Blue Mammoth Games. All Rights Reserved.</p>
+                    <span id="mensagemEmail" style="display: none;"></span>
+                    <p id="direitos" style="font-size: 20px;">© 2024 Blue Mammoth Games. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
@@ -148,7 +161,19 @@
 </body>
 <script>
     var x = document.getElementById("musica");
-    x.play(); 
+    x.play();
+    document.getElementById('formEmail').addEventListener('submit', async function (event) {
+        event.preventDefault();
+        var email = document.getElementById("email").value;
+
+        if (email.length == 0) {
+            alert("Digite um e-mail válido.");
+        } else {
+            var aviso = document.getElementById("mensagemEmail");
+            aviso.innerHTML = `E-mail enviado para ${email}`;
+            aviso.style.display = "initial";
+        }
+    })
 </script>
 
 </html>
